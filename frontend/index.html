@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CleanCity</title>
+
+    <link rel="stylesheet" href="src/index.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+
+        <div class="logo">
+            CleanCity
+        </div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Report</a>
+            <a href="#">My Complaints</a>
+            <a href="#">Leaderboard</a>
+        </nav>
+
+        <button class="login-btn">
+            Login
+        </button>
+
+    </header>
+
+
+    <!-- Hero Section -->
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <h1>
+                    Make Your City
+                    <span>Cleaner.</span>
+                </h1>
+
+                <p>
+                    Report waste problems, track complaints,
+                    and help make your community cleaner.
+                </p>
+
+                <div class="hero-buttons">
+
+                  <button class="primary-btn" onclick="goToReport()">
+    Report Waste
+</button>
+
+                    <button class="secondary-btn">
+                        Track Complaint
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Features -->
+        <section class="features">
+
+            <h2>
+                How CleanCity Works
+            </h2>
+
+            <div class="feature-container">
+
+                <div class="feature-card">
+                    <div class="feature-icon">📸</div>
+
+                    <h3>Report</h3>
+
+                    <p>
+                        Take a photo and report
+                        waste in your area.
+                    </p>
+                </div>
+
+
+                <div class="feature-card">
+                    <div class="feature-icon">📍</div>
+
+                    <h3>Track</h3>
+
+                    <p>
+                        Track your complaint and
+                        see its current status.
+                    </p>
+                </div>
+
+
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+
+                    <h3>Earn Points</h3>
+
+                    <p>
+                        Get points for responsible
+                        citizen participation.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Statistics -->
+        <section class="stats">
+
+            <div class="stat">
+                <h2>1,250+</h2>
+                <p>Complaints Resolved</p>
+            </div>
+
+            <div class="stat">
+                <h2>850+</h2>
+                <p>Active Citizens</p>
+            </div>
+
+            <div class="stat">
+                <h2>95%</h2>
+                <p>Resolution Rate</p>
+            </div>
+
+        </section>
+        <!-- Report Complaint Section -->
+
+<section class="report-section" id="report">
+
+    <div class="report-container">
+
+        <h2>Report a Waste Problem</h2>
+
+        <p>
+            Help keep your city clean by reporting
+            waste problems in your area.
+        </p>
+
+        <form id="complaintForm">
+
+            <label for="complaintTitle">
+                Problem
+            </label>
+
+            <input
+                type="text"
+                id="complaintTitle"
+                placeholder="Example: Garbage dumped on road"
+                required
+            >
+
+
+            <label for="complaintLocation">
+                Location
+            </label>
+
+            <input
+                type="text"
+                id="complaintLocation"
+                placeholder="Enter your location"
+                required
+            >
+
+
+            <label for="complaintDescription">
+                Description
+            </label>
+
+            <textarea
+                id="complaintDescription"
+                placeholder="Describe the problem..."
+                rows="5"
+                required
+            ></textarea>
+
+
+            <label for="complaintImage">
+                Upload Photo
+            </label>
+
+            <input
+                type="file"
+                id="complaintImage"
+                accept="image/*"
+            >
+
+
+            <button type="submit" class="primary-btn">
+                Submit Complaint
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 CleanCity. Building cleaner communities.
+        </p>
+
+    </footer>
+    <script>
+    function goToReport() {
+        document.getElementById("report").scrollIntoView({
+            behavior: "smooth"
+        });
+    }
+</script>
+
+<script src="src/script.js"></script>
+
+</body>
+
+</html>
+
